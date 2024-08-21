@@ -1,0 +1,1 @@
+fp8 a=0.5*2.2;fp8 b=1.0+a;fp8 c=sigmoid(b);

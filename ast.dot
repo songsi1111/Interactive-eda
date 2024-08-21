@@ -1,0 +1,22 @@
+digraph AST {
+  0 [label="fp8[c]"];
+  1 [label="fp8:sigmoid"];
+  2 [label="fp8[b]"];
+  3 [label="fp8:+"];
+  4 [label="fp8:1 FP8 Binary: 00111000
+"];
+  3 -> 4;
+  5 [label="fp8[a]"];
+  6 [label="fp8:*"];
+  7 [label="fp8:0.5 FP8 Binary: 00110000
+"];
+  6 -> 7;
+  8 [label="fp8:2 FP8 Binary: 01000000
+"];
+  6 -> 8;
+  5 -> 6;
+  3 -> 5;
+  2 -> 3;
+  1 -> 2;
+  0 -> 1;
+}
